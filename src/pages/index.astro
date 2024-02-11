@@ -9,6 +9,13 @@
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
 		<title>Astro</title>
+
+		<style is:global>
+			/* Unscoped, delivered as-is to the browser.
+			   Applies to all <h1> tags on your site. */
+			h1 { color: rgb(60, 15, 126); }
+		  </style>
+		  
 	</head>
 	<body>
 		<h1>Astro initial minimum build</h1>
