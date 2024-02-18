@@ -9,15 +9,39 @@
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
 		<title>Astro</title>
-
-		<style is:global>
-			/* Unscoped, delivered as-is to the browser.
-			   Applies to all <h1> tags on your site. */
-			h1 { color: rgb(60, 15, 126); }
+		
+		<link href='https://fonts.googleapis.com/css?family=Cardo' rel='stylesheet'>
+		
+		<style>
+		
+			h1 { color: rgb(4, 170, 79); }
+			p { 
+				font-size: calc(15px + 0.390625vw);
+				color:rgb(55, 2, 214);
+		
+				}
 		  </style>
 		  
 	</head>
 	<body>
+	<style>
+	:root{
+		margin: 0;
+		padding: 0;
+		--body-fonts: "Cardo", "Georgia", serif;
+		font-family: var(--body-fonts);
+	}
+	</style>
+	
+		
 		<h1>Astro initial minimum build</h1>
+
+		<h2>Paragraph font is responsive</h2>
+		<h3>Font is Cardo</h3>
+		<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
+<p>123456790</p>
+<p>ABCDEFGHIJKLMNOPQRSTUVWXYZ</p>
+<p>abcdefghijklmnopqrstuvwxyz</p>
+
 	</body>
 </html>
