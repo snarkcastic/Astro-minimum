@@ -11,7 +11,7 @@
 		<title>Astro</title>
 		
 		<link href='https://fonts.googleapis.com/css?family=Cardo' rel='stylesheet'>
-		
+		<script defer src="https://cdn.jsdelivr.net/npm/@alpinejs/collapse@3.x.x/dist/cdn.min.js"></script>	
 		<style>
 		
 			h1 { color: rgb(4, 170, 79); }
@@ -42,6 +42,16 @@
 <p>123456790</p>
 <p>ABCDEFGHIJKLMNOPQRSTUVWXYZ</p>
 <p>abcdefghijklmnopqrstuvwxyz</p>
+
+<h3>Alpine JS expand should be here:</h3>
+
+<div x-data="{ expanded: false }">
+	<button @click="expanded = ! expanded">Toggle Content</button>
+
+	<p id="foo" x-show="expanded" x-collapse>
+	  Lorem ipsum
+	</p>
+  </div>
 
 	</body>
 </html>
